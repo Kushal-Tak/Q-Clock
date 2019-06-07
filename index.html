@@ -1,0 +1,40 @@
+<DOCTYPE HTML>
+
+<html>
+<head>
+    <title></title>
+   <link rel="stylesheet" type="text/css" href="./style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+<body onload="tick()" background="pictures/bkg.jpeg">
+    <audio id="alarmMusic">
+        <source src="alarmOne.mp3" type="audio/mpeg">
+    </audio>
+    <nav class ="container" >
+        <div class="topnav">
+            <img src= " pictures/Qlogo.png" id="QlogoPos" height="90" width="220">
+
+                <label id = "setAlarm"> Set Alarm</label>
+                <input type="time" id = "getTime" > 
+                <button id="add" onclick="createAlarm()">Add Alarm</button>
+
+        </div>
+            <div id ="Anaclock">
+            <div id="secH" class="transform"></div>
+            <div id="minH" class="transform"></div>
+            <div id="hrH" class="transform"></div>
+        </div>
+
+
+    <input type="button" id="clockBtn" value="Go Digital" onclick="switchClock()">
+
+    <div id="Digiclock"></div>
+    </nav>
+
+    
+</body>
+
+<script src="script.js"></script>
+</html>
